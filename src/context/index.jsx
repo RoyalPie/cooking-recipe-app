@@ -35,7 +35,7 @@ export default function GlobalState({ children }) {
     if (index === -1) {
       copyList.push(getCurrentItem)
     } else {
-      copyList.splice(index)
+      copyList.splice(index, 1)
     }
     setFavoritesList(copyList);
   }
